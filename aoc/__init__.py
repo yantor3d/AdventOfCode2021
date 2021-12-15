@@ -23,10 +23,10 @@ def solve(day, fn_01, fn_02):
     answer_01 = fn_01(args)
     print(f'Part 01: {answer_01}')
     et = time.time()
-    print("Took {:.16f} seconds".format(et - st))
+    print("Took {:.3f} seconds".format(et - st))
 
     st = time.time()
     answer_02 = fn_02(args)
     print(f'Part 02: {answer_02}')
     et = time.time()
-    print("Took {:.16f} seconds".format(et - st))
+    print("Took {:.3f} seconds".format(et - st))
