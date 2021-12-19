@@ -2,13 +2,13 @@ import time
 import os
 
 
-def puzzle_input(day):
+def puzzle_input(day, source='data'):
     day, _ = os.path.splitext(os.path.basename(day))
     day = day[:6]
 
     path = os.path.abspath(
         os.path.join(
-            os.path.dirname(__file__), '..', 'data', '{}.txt'.format(day)
+            os.path.dirname(__file__), '..', source, '{}.txt'.format(day)
         )
     )
 
